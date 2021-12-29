@@ -1,6 +1,5 @@
 const router = require("express").Router();
 let notes  = require('../../db/notes.json');
-const { findById, validateNote, createNewNote } = require('../../lib/notes')
 const fs = require('fs')
 
 router.get('/notes', (req, res) => {
@@ -23,7 +22,12 @@ router.post("/notes", (req, res) => {
     res.json(notes)
 });
 
-
+router.delete('/notes/:id', (req, res) => {
+    const id = req.params.id
+    notes = notes.filter(note => note.id != id)
+    fs.writeFileSync("./db/notes.json", JSON.stringify(notes, null, "\t" ))
+    res.json(notes)
+})
 
 module.exports = router;
 

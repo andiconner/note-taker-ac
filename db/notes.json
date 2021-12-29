@@ -1,12 +1,17 @@
 [
 	{
-		"title": "2022 to do",
-		"text": "- work out \n",
+		"title": "LinkedIn",
+		"text": "update",
+		"id": "0"
+	},
+	{
+		"title": "2022",
+		"text": "happy",
 		"id": "1"
 	},
 	{
-		"title": "kjdf",
-		"text": "df",
-		"id": "1"
+		"title": "Study",
+		"text": "Tuesdays and Thursdays: block 5 hours each day\nFriday: block 6 hours\nSaturday: block 4 hours\nTOTAL: 20 hours",
+		"id": "2"
 	}
 ]
